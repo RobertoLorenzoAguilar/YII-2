@@ -74,10 +74,12 @@ https://git.miralo.xyz/computo21/yii2.git
 ```
 
 <br>
+
 Después de clonar el proyecto ejecutar en la terminal instalar las dependencias composer
-~~~
+
+```
 composer install
-~~~
+```
 Si te aparece el siguiente error, proceder a actualizar composer.
 
 <img src="Images/composer_error.png" alt="Logo">
