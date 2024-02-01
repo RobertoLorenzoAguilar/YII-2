@@ -37,6 +37,7 @@ Setear tus variables de entorno
 Se explicará cómo crear un rol de usuario específico para la base de datos, garantizando la seguridad y los permisos adecuados.
 <br><br>Recuerda tener instalado el motor del posgres para poder operar la consola.
 
+<img src="Images/psql.PNG" alt="Logo">
 ![Texto Alternativo](Images/psql.PNG")
 
 Ingresar el siguiente ejemplo desde la consola de (psql):
