@@ -38,7 +38,6 @@ Se explicará cómo crear un rol de usuario específico para la base de datos, g
 <br><br>Recuerda tener instalado el motor del posgres para poder operar la consola.
 
 <img src="Images/psql.PNG" alt="Logo">
-![Texto Alternativo](Images/psql.PNG")
 
 Ingresar el siguiente ejemplo desde la consola de (psql):
 
@@ -64,7 +63,7 @@ Se proporcionarán instrucciones sobre cómo configurar adecuadamente el archivo
 <br>
 Configurar en el archivo config/db.php la información de la base de datos, reemplazar DB_NAME, DB_USER y DB_PWD
 
-![Texto Alternativo](Images/db.png")
+<img src="Images/db.png" alt="Logo">
 
 ### 4. Clonar el Proyecto de PHP
 
@@ -81,7 +80,7 @@ composer install
 ~~~
 Si te aparece el siguiente error, proceder a actualizar composer.
 
-![Texto Alternativo](Images/composer_error.png")
+<img src="Images/composer_error.png" alt="Logo">
 
 ```
 composer update
@@ -103,7 +102,8 @@ Comando para ejecutar solo una migración.
 php yii migrate/up 1
 ```
 
-![Texto Alternativo](Images/archivo_de_migracion.png")
+<img src="Images/archivo_de_migracion.png" alt="Logo">
+
 <br>
 Comando para crear un archivo de migración.
 
@@ -117,12 +117,12 @@ Si deseas ver las tablas creadas en tu base de datos, lo puedes hacer dentro de 
 \dt
 ```
 
-![Texto Alternativo](Images/dt.png")
+<img src="Images/dt.png" alt="Logo">
 
 Si deseas checar la conectividad a tu base de datos, puedes hacerlo de la siguiente manera.
 Setear las variables de entorno de Postgres.
 <br>
-![Texto Alternativo](Images/psql_enviroment.PNG")
+<img src="Images/psql_enviroment.PNG" alt="Logo">
 <br>
 Puedes proceder a gestionar tu base de datos directamente ahora desde CMD.
 
@@ -137,10 +137,12 @@ Con el siguiente comando sales del modo PSQL.
 ```
 
 También se puede utilizar el gestor Datagrip para facilitar de manera manual las transacciones.
-![Texto Alternativo](Images/cmd_gestor.PNG")
+<img src="Images/cmd_gestor.PNG" alt="Logo">
 
 Configuración del Datagrip.
-![Texto Alternativo](Images/datagrip_config.gif")
+
+<img src="Images/datagrip_config.gif" alt="Logo">
+
 **nota:** como podemos observar, pudimos configurar la conexión desde la interfaz gráfica de usuario (GUI), mediante Datagrip, para facilitar la gestión de la base de datos previamente creada.
 
 ### 6. Creación de Tablas.
@@ -148,14 +150,13 @@ Configuración del Datagrip.
 Pasos detallados sobre la creación de tablas específicas, asegurando la coherencia y estructuración adecuada de los datos.
 <br>
 Ejemplo para hacer una tabla, llave primaria, llave foránea.
-![Texto Alternativo](Images/tabla.png")
+<img src="Images/tabla.png" alt="Logo">
 
 ### 7. Inicialización del servidor PHP.
 
 Instrucciones para inicializar el servidor PHP y poner en marcha la aplicación localmente.
 <br>
-
-![Texto Alternativo](Images/iniciar_un_servidor_HTTP.png")
+<img src="Images/iniciar_un_servidor_HTTP.png" alt="Logo">
 
 Comando para iniciar un servidor HTTP en el proyecto.
 
@@ -165,41 +166,40 @@ php yii serve
 
 La primera pantalla al iniciar el servidor es:
 
-![Texto Alternativo](Images/primer_pantalla_server.png")
+<img src="Images/primer_pantalla_server.png" alt="Logo">
 
 **nota: **recuerda agregar la extensión gii para crear tus modelos http://localhost:8080/gii
-
-![Texto Alternativo](Images/Model_Generator.png")
+<img src="Images/Model_Generator.png" alt="Logo">
 
 ### 8. Generador de Modelos a través del Yii 2
 
 Cómo utilizar el generador de modelos proporcionado por Yii 2 para facilitar la creación de modelos de datos.
 <br>
 Entrar en la url del servidor HTTP e ir a la url http://localhost:8080/gii para entrar en el generador de código, después elegir "Model Generator"
-![Texto Alternativo](Images/Model_Generator_1.png")
+<img src="Images/Model_Generator_1.png" alt="Logo">
 <br>
 Rellenar los campos "Table Name" y "Model Class Name"
-![Texto Alternativo](Images/Model_Generator_2.png")
+<img src="Images/Model_Generator_2.png" alt="Logo">
 <br>
 Dale clic en "Preview" y después "Generate" para generar el modelo de la tabla.
 
 ### 9. Modelos a través del Yii 2
 
 Archivo generado en la carpeta "models"
-![Texto Alternativo](Images/models.png")
+<img src="Images/models.png" alt="Logo">
 Corregir etiquetas de "attributeLabels", nombre de las relaciones ("getIdUsuario0" => "getUsuario") y php doc (documentación sobre la clase)
-![Texto Alternativo](Images/corregir_attributeLabels.png")
+<img src="Images/corregir_attributeLabels.png" alt="Logo">
 Generar en el directorio models del módulo donde estemos trabajando (por lo general en modules/v1/models), agregar una clase que herede del archivo que acabamos de generar y agregaremos los métodos fields (campos visibles por el cliente) y extraFields (relaciones visibles por el cliente).
-![Texto Alternativo](Images/directorio_models.png")
+<img src="Images/directorio_models.png" alt="Logo">
 el modelo que está en la raíz debe heredar de ModeloBase
-![Texto Alternativo](Images/herencia_modelo_base.png")
+<img src="Images/herencia_modelo_base.png" alt="Logo">
 
 ### 9. Configuración de Controladores.
 
 Instrucciones sobre cómo configurar controladores para gestionar de manera eficiente las solicitudes y respuestas en la aplicación.
 <br>
 Para crear el controlador, copiar el archivo de un catálogo y renombrar el archivo, la clase y la variable $modelClass, corregir los textos de los mensajes de respuesta.
-![Texto Alternativo](Images/creacion_controlador.png")
+<img src="Images/creacion_controlador.png" alt="Logo">
 
 ### TODO
 
