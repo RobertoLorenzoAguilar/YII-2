@@ -1,2 +1,0 @@
-# Componentes
-- [Uploader](uploader.md)
