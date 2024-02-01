@@ -170,7 +170,7 @@ La primera pantalla al iniciar el servidor es:
 
 <img src="Images/primer_pantalla_server.png" alt="Logo">
 
-**nota: **recuerda agregar la extensión gii para crear tus modelos http://localhost:8080/gii
+**nota:** recuerda agregar la extensión gii para crear tus modelos http://localhost:8080/gii
 <img src="Images/Model_Generator.png" alt="Logo">
 
 ### 8. Generador de Modelos a través del Yii 2
