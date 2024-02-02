@@ -35,7 +35,7 @@ Setear tus variables de entorno.
 Se explicará cómo crear un rol de usuario específico para la base de datos, garantizando la seguridad y los permisos adecuados.
 <br><br>Recuerda tener instalado el motor del posgres para poder operar la consola.
 
-![Texto Alternativo](Images/psql.PNG")
+<img src="Images/psql.PNG">
 
 Ingresar el siguiente ejemplo desde la consola de (psql):
 
@@ -61,7 +61,7 @@ Se proporcionarán instrucciones sobre cómo configurar adecuadamente el archivo
 <br>
 Configurar en el archivo config/db.php la información de la base de datos, reemplazar DB_NAME, DB_USER y DB_PWD
 
-![Texto Alternativo](Images/db.png")
+<img src="Images/db.png">
 
 ### 4. Clonar el Proyecto de PHP
 
@@ -78,7 +78,7 @@ composer install
 ~~~
 Sí te aparece el siguiente error proceder a actualizar composer.
 
-![Texto Alternativo](Images/composer_error.png")
+<img src="Images/composer_error.png">
 
 ```
 composer update
@@ -100,7 +100,7 @@ Comando para ejecutar solo una migración.
 php yii migrate/up 1
 ```
 
-![Texto Alternativo](Images/archivo_de_migracion.png")
+<img src="Images/archivo_de_migracion.png">
 <br>
 Comando para crear un archivo de migración.
 
@@ -114,12 +114,12 @@ Si deseas ver las tablas creadas en tu base de datos, lo puedes hacer dentro de 
 \dt
 ```
 
-![Texto Alternativo](Images/dt.png")
+<img src="Images/dt.png">
 
 Si deseas checar la conectividad a tu base de datos, puedes hacerlo de la siguiente manera.
 Setear las variables de entorno de Postgres.
 <br>
-![Texto Alternativo](Images/psql_enviroment.PNG")
+<img src="Images/psql_enviroment.PNG">
 <br>
 Puedes proceder a gestionar tu base de datos directamente ahora desde CMD.
 
@@ -134,10 +134,10 @@ Con el siguiente comando sales del modo PSQL.
 ```
 
 También se puede utilizar el gestor Datagrip para facilitar de manera manual las transacciones.
-![Texto Alternativo](Images/cmd_gestor.PNG")
+<img src="Images/cmd_gestor.PNG">
 
 Configuración del Datagrip.
-![Texto Alternativo](Images/datagrip_config.gif")
+<img src="Images/datagrip_config.gif">
 **nota:** como podemos observar, pudimos configurar la conexión desde la interfaz gráfica de usuario (GUI), mediante Datagrip, para facilitar la gestión de la base de datos previamente creada.
 
 ### 6. Creación de Tablas.
@@ -145,13 +145,13 @@ Configuración del Datagrip.
 Pasos detallados sobre la creación de tablas específicas, asegurando la coherencia y estructuración adecuada de los datos.
 <br>
 Ejemplo para hacer una tabla, llave primaria, llave foránea.
-![Texto Alternativo](Images/tabla.png")
+<img src="Images/tabla.png">
 
 ```
 php yii migrate/create tbl_ra
 ```
 
-![Texto Alternativo](Images/crear_migracion.gif")
+<img src="Images/crear_migracion.gif">
 
 Comando para dar downgrade a la migración.
 
@@ -239,17 +239,17 @@ class m240201_185131_tbl_test extends Migration
 
 Al ejecutar la migración, si todo está bien, debe aparecer tus tablas en la base de datos, en este caso producto-categoría.
 
-![Texto Alternativo](Images/crear_migracion_deshacer_migracion.gif")
+<img src="Images/crear_migracion_deshacer_migracion.gif">
 
 **nota:** Podemos visualizar la relación entre entidades mediante Datagrip.
-![Texto Alternativo](Images/relacion.png")
+<img src="Images/relacion.png">
 
 ### 7. Inicialización del servidor PHP.
 
 Instrucciones para inicializar el servidor PHP y poner en marcha la aplicación localmente.
 <br>
 
-![Texto Alternativo](Images/iniciar_un_servidor_HTTP.png")
+<img src="Images/iniciar_un_servidor_HTTP.png">
 
 Comando para iniciar un servidor HTTP en el proyecto.
 
@@ -259,58 +259,58 @@ php yii serve
 
 La primera pantalla al iniciar el servidor es:
 
-![Texto Alternativo](Images/primer_pantalla_server.png")
+<img src="Images/primer_pantalla_server.png">
 
 ** Nota: **recuerda agregar la extensión gii para crear tus modelos http://localhost:8080/gii
 
-![Texto Alternativo](Images/Model_Generator.png")
+<img src="Images/Model_Generator.png">
 
 ### 8. Generador de Modelos a través del Yii 2
 
 Cómo utilizar el generador de modelos proporcionado por Yii 2 para facilitar la creación de modelos de datos.
 <br>
 Entrar en la URL del servidor HTTP e ir a la URL http://localhost:8080/gii para entrar en el generador de código, después elegir "Model Generator".
-![Texto Alternativo](Images/Model_Generator_1.png")
+<img src="Images/Model_Generator_1.png">
 <br>
 Rellenar los campos "Table Name" y "Model Class Name"
-![Texto Alternativo](Images/Model_Generator_2.png")
+<img src="Images/Model_Generator_2.png">
 <br>
 Dale clic en "Preview" y después "Generate" para generar el modelo de la tabla.
 
 Ejemplo de generación de modelos Producto y categoría.
 
-![Texto Alternativo](Images/modelos_producto_categoria.gif")
+<img src="Images/modelos_producto_categoria.gif">
 
 ### 9. Modelos a través del Yii 2
 
 Archivo generado en la carpeta "models"; normalizar la nomenclatura de los modificadores de acceso, ya que en veces el modelo en atributeLabels se genera con plurales o “s”, etc.
 
-![Texto Alternativo](Images/normalizar_nomeclatura_modificadorer.gif")
+<img src="Images/normalizar_nomeclatura_modificadorer.gif">
 **Ejemplo**
-![Texto Alternativo](Images/models.png")
+<img src="Images/models.png">
 Corregir etiquetas de "attributeLabels", nombre de las relaciones ("getIdUsuario0" => "getUsuario") y php doc (documentación sobre la clase).
-![Texto Alternativo](Images/corregir_attributeLabels.png")
+<img src="Images/corregir_attributeLabels.png">
 Generar en el directorio models del módulo donde estemos trabajando (por lo general en modules/v1/models).
 <br>Agregar una clase que herede del archivo que acabamos de generar.
 <br>Agregaremos los métodos fields (campos visibles por el producto como categoría) y extraFields sería categoría.
 
-![Texto Alternativo](Images/ejemplo_producto_model.png")
+<img src="Images/ejemplo_producto_model.png">
 
 **Ejemplo:**
-![Texto Alternativo](Images/directorio_models.png")
+<img src="Images/directorio_models.png">
 el modelo que está en la raíz debe heredar de ModeloBase \*\*Solo para cuando se tenga implementada en código la clase, en su mayoría para cuando se generan los id's del tipo UUID string(32)
-![Texto Alternativo](Images/herencia_modelo_base.png")
+<img src="Images/herencia_modelo_base.png">
 
 ### 10. Configuración de controladores.
 
 Instrucciones sobre cómo configurar controladores para gestionar de manera eficiente las solicitudes y respuestas en la aplicación.
 <br>
 Para crear el controlador, copiar el archivo de un catálogo y renombrar el archivo, la clase y la variable $modelClass, corregir los textos de los mensajes de respuesta.
-![Texto Alternativo](Images/controller_plantilla.gif")
+<img src="Images/controller_plantilla.gif">
 
 **Ejemplo:**
 Utilizar una plantilla previa del controlador y remplazar el catalogo con el cual se necesita interactuar.
-![Texto Alternativo](Images/creacion_controlador.png")
+<img src="Images/creacion_controlador.png">
 
 **Ejemplo Código Controlador Producto.**
 
@@ -412,9 +412,9 @@ class ProductoController extends AuthController {
 Instrucciones sobre cómo configurar el entorno local haciendo un respaldo de la base de datos.
 <br>
 Exportar la base de datos del servidor, mediante las opciones de pg dump.
-![Texto Alternativo](Images/export_pg_dump.PNG")
+<img src="Images/export_pg_dump.PNG">
 Configurar y correr el generador del archivo.
-![Texto Alternativo](Images/run_pg.PNG")
+<img src="Images/run_pg.PNG">
 **Comandos Útiles para crear el rol y la base de datos.**
 
 ```
@@ -435,15 +435,15 @@ create database "sagarhpa-sirgea-test" with owner="doadmin" template=template0;
 ```
 
 **Ejemplo**
-![Texto Alternativo](Images/rol_create.PNG")
+<img src="Images/rol_create.PNG">
 Conectar instancia servidor local.
-![Texto Alternativo](Images/local_connect.PNG")
+<img src="Images/local_connect.PNG">
 Restaurar Backup en el local.
-![Texto Alternativo](Images/restore.PNG")
+<img src="Images/restore.PNG">
 Ejecutar restore de la Base de datos.
-![Texto Alternativo](Images/ejecutar_restore.PNG")
+<img src="Images/ejecutar_restore.PNG">
 **Deberán aparecer las tablas con los datos**
-![Texto Alternativo](Images/restore_final.PNG")
+<img src="Images/restore_final.PNG">
 
 ### TODO
 
