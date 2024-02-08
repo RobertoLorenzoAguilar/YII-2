@@ -418,11 +418,11 @@ Configurar y correr el generador del archivo.
 **Comandos Útiles para crear el rol y la base de datos.**
 
 ```
-create role "SAGARHPA" with login password 'root';
+create role "RoleName" with login password 'root';
 
-DROP ROLE IF EXISTS doadmin;
+DROP ROLE IF EXISTS RoleName;
 
-DROP DATABASE IF EXISTS "sagarhpa-sirgea-test";
+DROP DATABASE IF EXISTS "db-test";
 
 SELECT rolname FROM pg_roles;
 
@@ -430,7 +430,7 @@ CREATE USER doadmin WITH SUPERUSER LOGIN PASSWORD 'root';
 
 \du  => rol actual y permisos asignados
 
-create database "sagarhpa-sirgea-test" with owner="doadmin" template=template0;
+create database "db-test" with owner="doadmin" template=template0;
 
 ```
 
