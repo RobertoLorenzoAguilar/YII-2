@@ -445,6 +445,25 @@ Ejecutar restore de la Base de datos.
 **Deberán aparecer las tablas con los datos**
 <img src="Images/restore_final.PNG">
 
+**Instalar XAMP para tener una versión de PHP**
+Obtener la información y copiarla en la página xdebug.
+<img src="Images/phpinfo.png">
+https://xdebug.org/wizard
+
+Después copiar el siguiente código en php.init
+<img src="Images/php_ini.png">
+
+```
+zend_extension = C:\xampp\php\ext\php_xdebug.dll
+[XDebug]
+xdebug.mode = debug
+xdebug.start_with_request=yes
+xdebug.idekey=VSCODE
+```
+
+No olvidas instalar la extensión de PHP debugger en Visual Studio Code.
+<img src="Images/vs_php.png.png">
+
 ### TODO
 
 Lista de tareas pendientes o mejoras planificadas para el proyecto.
