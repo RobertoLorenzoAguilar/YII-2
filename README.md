@@ -457,3 +457,4 @@ Lista de tareas pendientes o mejoras planificadas para el proyecto.
 3. [DataGrip](https://www.jetbrains.com/datagrip/): Entorno de desarrollo para bases de datos.
 4. [Git](https://git-scm.com/): Sistema de control de versiones distribuido.
 5. [PostgreSQL](https://www.postgresql.org/): Motor de base de datos relacional.
+6. [Debugguer Visual Studio Code PHP](https://www.youtube.com/watch?v=QxRTw4GPk5Q): Debugueo en windows visual studio code.
