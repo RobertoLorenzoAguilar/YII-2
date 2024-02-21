@@ -82,6 +82,8 @@ Sí te aparece el siguiente error proceder a actualizar composer.
 
 ```
 composer update
+
+composer install
 ```
 
 ### 5. Migraciones
