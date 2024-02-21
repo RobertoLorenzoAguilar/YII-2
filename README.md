@@ -445,6 +445,7 @@ Ejecutar restore de la Base de datos.
 **Deberán aparecer las tablas con los datos**
 <img src="Images/restore_final.PNG">
 
+### Pasos para instalar visual code debug
 **Instalar XAMP para tener una versión de PHP**
 Obtener la información y copiarla en la página xdebug.
 <img src="Images/phpinfo.png">
@@ -462,7 +463,7 @@ xdebug.idekey=VSCODE
 ```
 
 No olvidas instalar la extensión de PHP debugger en Visual Studio Code.
-<img src="Images/vs_php.png.png">
+<img src="Images/vs_php.png">
 
 ### TODO
 
